@@ -33,8 +33,13 @@ public class Taschenrechner{
 				Ausgabe(firstInput, secondInput, result, operator);
 				break;
 			case '/':
-				result = (int)firstInput / (int)secondInput;
-				Ausgabe(firstInput, secondInput, result, operator);
+				try{
+					result = (int)firstInput / (int)secondInput;
+					Ausgabe(firstInput, secondInput, result, operator);
+				}
+				catch(ArithmeticException e){
+					System.out.println("Division durch null ist doof");
+				}
 				break;
 				
 			default:
