@@ -33,7 +33,7 @@ public class Taschenrechner{
 				Ausgabe(firstInput, secondInput, result, operator);
 				break;
 			case '/':
-				result = (int)firstInput / (int)secondInput;
+				result = (int)firstInput % (int)secondInput;
 				Ausgabe(firstInput, secondInput, result, operator);
 				break;
 				
